@@ -1,32 +1,13 @@
+// desafio1 - idade
 
+const prompt = require("prompt-sync")();
 
+var idade = prompt("Informe sua Idade: ");
 
-
-
-
-
-
-
-
-switch (operacao) {
-    case "1":
-        resultado = soma(numero1,numero2);
-        break;
-    case 2:
-        resultado = sub(numero1,numero2);
-        break;
-    case 3:
-        resultado = multi(numero1,numero2);
-        break;
-        case 4:
-            if(numero2==0){
-                console.log("Não Dividiras por Zero!!!");
-                resultado = null;
-            }else{
-                resultado = div(numero1,numero2);
-            }
-    default:
-        console.log("Operação Inválida")
-        break;
+if(idade<18){
+    console.log("Menor de idade");
+}else if(idade<60){
+    console.log("Adulto");
+}else{
+    console.log("Idoso")
 }
-console.log("Resultado "+resultado);
